@@ -7,7 +7,8 @@
             question: "いくらはどれ",
             answer: ["maguro", "saba", "ikura"],
             correctAnswer: "ikura",
-            comment :"いくらは鮭のたまご"
+            comment :"いくらは鮭のたまご",
+            image:"../images/sushi_ikura.png"
         },
         { 
             question: "マグロはどれ",
@@ -33,6 +34,7 @@
     const answersContainer = document.getElementById("answers-container");
     const nextButton = document.getElementById("next-btn");
     const taishou = document.getElementById('taishou');
+    const dishes = document.getElementById('dishes');
 
 	
     let remainingQuizzes = [...quizzes];
@@ -69,13 +71,13 @@
 	}
 
     // 回答の正誤
-    function checkAnswer(selectedAnswer, correctAnswer,comment) {
+    function checkAnswer(selectedAnswer, correctAnswer,comment, image) {
         if (selectedAnswer === correctAnswer) {
-			//お皿画面の画像を変更する
-			お皿側			
 	        taishou.textContent = "へい、おまち！";
 			alert("正解!");
 	        alertComment(correctAnswer, comment);
+	        //お皿画面の画像を変更する
+	        dishes.innerHTML = `<img src="${image}" alt="Dish Image">`;
 	        
 	        
         } else {
@@ -89,7 +91,7 @@
     // 次の問題
     function nextQuestion() {
         if (remainingQuizzes.length === 0) {
-            alert("End of the quiz!");
+            alert("あおいそです!");
             // クイズが終了した後の処理を追加する場合はここに追加
             return;
         }
