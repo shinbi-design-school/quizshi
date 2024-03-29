@@ -14,19 +14,22 @@
             question: "マグロはどれ",
             answer: ["maguro", "tamago", "tai"],
             correctAnswer: "maguro",
-            comment: "まぐろはとまると死ぬ"
+            comment: "まぐろはとまると死ぬ",
+            image:"../images/sushi_akami.png"
         },
         {
             question: "さばはどれ",
             answer: ["kinoko", "saba", "kai"],
             correctAnswer: "saba",
-            comment: "さばは好きじゃない"
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
         },
         {
             question: "たいはどれ",
             answer: ["tai", "ringo", "kai"],
             correctAnswer: "tai",
-            comment: "たいはめでたい"
+            comment: "たいはめでたい",
+            image:"../images/sushi_kinmedai.png"
         }
     ];
 
