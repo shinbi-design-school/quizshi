@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+body{
+    font-family: "Dela Gothic One", sans-serif;
+    background-image: url(../images/sushiback.jpg);
+    background-size: cover; /* 背景画像を画面全体に表示 */
+    /* background-position: center; 画像を中央に配置 */
+    background-repeat: no-repeat;
+    /* position: relative; オーバーレイ用に相対位置を指定 */
+}
+
+/* body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); /* 黒色の半透明オーバーレイ
+} */
+
+.contents{
+ display: flex;
+}
+
+/* タイトル */
+.main_tittle {
+    font-family: "Dela Gothic One", sans-serif; 
+    font-weight: 400;
+    font-style: normal;
+    color: #333; 
+    font-size: 63px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+} 
+
+/* クイズ */
+.quiz {
+    width: 500px;
+    margin: 65px;
+    padding-top: 100px;
+}
+
+.question{
+    font-size: 36px;
+}
+
+button {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 22px;
+    margin: 13px;
+    padding: 20px;
+}
+
+
+/* お寿司側右画面 */
+.talk {
+    display: flex;
+}
+
+img.itamae1{
+    width: 150px;
+    margin-right: 20px; /* 画像間の間隔を設定 */
+}
+
+img.sushigeta{
+    width: 750px;
+    margin: auto;
+    display: block;
+}
+
+img.sushineta1{
+    width: 80px;
+    position: absolute;
+    right: 130px;
+    top: 50px;
+}
+
+img.sushineta2{
+    width: 100px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+h2#taishou {
+    text-align: center;
+    letter-spacing : 3px;
+    position: relative; 
+    display: inline-block;
+    margin: 1.5em 0;
+    padding: 25px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 36px;
+    background: #e0edff;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+}
+
+h2#taishou:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #e0edff;
+  }
+
+.osushi {
+    width: 800px;
+    display: flex;
+    flex-direction: column; /* 子要素を縦方向に配置 */
+    align-items: center; /* 子要素を中央揃え */
+}

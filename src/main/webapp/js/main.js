@@ -5,7 +5,7 @@
     const quizzes = [
         {
             question: "いくらはどれ",
-            answer: ["maguro", "saba", "ikura"],
+            answer: ["まぐろ", "さば", "いくら"],
             correctAnswer: "ikura",
             comment :"いくらは鮭のたまご",
             image:"../images/sushi_ikura.png"
