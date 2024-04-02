@@ -38,25 +38,64 @@ body{
 /* クイズ */
 .quiz {
     width: 500px;
-    margin: 65px;
+    margin: 34px 0 64px 155px;
     padding-top: 100px;
+}
+.quiz img{
+    width: 50px;
+    float: left;
+    margin-top: 30px;
 }
 
 .question{
     font-size: 36px;
+    margin-top: 30px;
 }
 
 button {
+    all: unset;
     font-family: "Dela Gothic One", sans-serif;
     font-size: 22px;
     margin: 13px;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
+    writing-mode: tb-rl;
+    text-orientation: upright;
+    background-image: url("../images/sushi_kaiten_sara2_green.png");
+    background-position: top;
+    background-size: 100%; /* 画像をボタンに合わせて拡大または縮小 */
+    background-repeat: no-repeat;
 }
 
+#next-btn{
+    all: unset;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333; /* フォントの色 */
+    font-size: 150px; /* フォントサイズ */
+    padding: 15px 30px; /* ボタンのパディングを大きくする */
+    font-size: 50px; /* ボタンのフォントサイズを大きくする */
+    background-color: #C75961;
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* ボーダーの角を丸くする */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#next-btn:hover {
+    background-color: #c7596093;
+}
+
+div#answers-container {
+    width: 57%;
+    display: flex;
+}
 
 /* お寿司側右画面 */
 .talk {
     display: flex;
+    margin-left: -116px;
 }
 
 img.itamae1{
@@ -66,7 +105,7 @@ img.itamae1{
 
 img.sushigeta{
     width: 750px;
-    margin: auto;
+    margin: -40px auto;
     display: block;
 }
 
@@ -89,7 +128,7 @@ h2#taishou {
     letter-spacing : 3px;
     position: relative; 
     display: inline-block;
-    margin: 1.5em 0;
+    margin: 0 -0.5em 3.5em 0;
     padding: 25px 10px;
     min-width: 120px;
     max-width: 100%;

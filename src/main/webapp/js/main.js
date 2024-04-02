@@ -30,7 +30,15 @@
             correctAnswer: "tai",
             comment: "たいはめでたい",
             image:"../images/sushi_kinmedai.png"
+        },
+        {
+            question: "たいはどれ",
+            answer: ["フィラデルフィアロール", "たくあん巻き", "かんぴょう巻き"],
+            correctAnswer: "フィラデルフィアロール",
+            comment: "たいはめでたい",
+            image:"../images/sushi_kinmedai.png"
         }
+
     ];
 
     const questionContainer = document.getElementById("question-container");

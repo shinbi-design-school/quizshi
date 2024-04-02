@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333; /* フォントの色 */
+    font-size: 150px; /* フォントサイズ */
+    background-color: #f0f0f0;
+    background-image: url("../images/sushiyatop.jpg"); /* 画像 */
+    background-size: cover;               /* 全画面 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+/* 追加したフォントを適用 */
+.dela-gothic-one-regular {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333; /* フォントの色 */
+    font-size: 150px; /* フォントサイズ */
+}
+
+button {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333; /* フォントの色 */
+    font-size: 150px; /* フォントサイズ */
+    padding: 15px 30px; /* ボタンのパディングを大きくする */
+    font-size: 50px; /* ボタンのフォントサイズを大きくする */
+    background-color: #C75961;
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* ボーダーの角を丸くする */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c7596093;
+}
