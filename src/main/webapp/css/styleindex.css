@@ -7,6 +7,7 @@ body{
     /* background-position: center; 画像を中央に配置 */
     background-repeat: no-repeat;
     /* position: relative; オーバーレイ用に相対位置を指定 */
+    overflow:hidden ;
 }
 
 /* body::before {
@@ -38,17 +39,18 @@ body{
 /* クイズ */
 .quiz {
     width: 500px;
-    margin: 34px 0 64px 155px;
+    margin: 34px 0 64px 82px;
     padding-top: 100px;
 }
 .quiz img{
     width: 50px;
     float: left;
     margin-top: 30px;
+    margin-left: -43px;
 }
 
 .question{
-    font-size: 36px;
+    font-size: 26px;
     margin-top: 30px;
 }
 
@@ -72,15 +74,17 @@ button {
     font-weight: 400;
     font-style: normal;
     color: #333; /* フォントの色 */
-    font-size: 150px; /* フォントサイズ */
+    font-size: 30px;
     padding: 15px 30px; /* ボタンのパディングを大きくする */
-    font-size: 50px; /* ボタンのフォントサイズを大きくする */
     background-color: #C75961;
     color: #fff;
     border: none;
     border-radius: 8px; /* ボーダーの角を丸くする */
     cursor: pointer;
     transition: background-color 0.3s;
+    position: absolute;
+    left: 393px;
+    bottom: 27px;
 }
 
 #next-btn:hover {
@@ -116,6 +120,20 @@ img.sushineta1{
     top: 50px;
 }
 
+img.sake {
+    position: absolute;
+    width: 11%;
+    bottom: 135px;
+    left: 400px;
+}
+
+img.syouyu {
+    position: absolute;
+    width: 11%;
+    bottom: 94px;
+    left: 535px;
+}
+
 img.sushineta2{
     width: 100px;
     position: absolute;
@@ -128,13 +146,13 @@ h2#taishou {
     letter-spacing : 3px;
     position: relative; 
     display: inline-block;
-    margin: 0 -0.5em 3.5em 0;
+    margin: 18px -0.5em 3.5em 0;
     padding: 25px 10px;
     min-width: 120px;
     max-width: 100%;
-    color: #555;
-    font-size: 36px;
-    background: #e0edff;
+    color: black;
+    font-size: 30px;
+    background: #fddda0;
     border-radius: 15px;
     width: auto;
     height: auto;
@@ -147,7 +165,7 @@ h2#taishou:before {
     left: 100%;
     margin-left: -15px;
     border: 15px solid transparent;
-    border-top: 15px solid #e0edff;
+    border-top: 15px solid #fddda0;
   }
 
 .osushi {
@@ -155,4 +173,22 @@ h2#taishou:before {
     display: flex;
     flex-direction: column; /* 子要素を縦方向に配置 */
     align-items: center; /* 子要素を中央揃え */
+}
+button#okanjou {
+    all: unset;
+    position: absolute;
+    bottom: 27px;
+    right: 31px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    font-size: 30px;
+    padding: 15px 30px;
+    background-color: #C75961;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
