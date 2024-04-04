@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+body {
+    overflow: hidden;
+    background-color: #f0f0f0;
+    background-image: url("../images/sushiback.jpg"); /* 画像 */
+    background-size: cover;               /* 全画面 */
+    margin-top: 0px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+    .container {
+    text-align: center;
+    }
+
+    .message {
+    margin: 0;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333; /* フォントの色 */
+    font-size: 60px; /* フォントサイズ */
+    position: relative;
+    top: 40px;
+    }
+
+    .message_bye {
+    margin: 0px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333; /* フォントの色 */
+    font-size: 50px; /* フォントサイズ */
+    position: relative;
+    top: 45px;
+    
+    }
+
+    button {
+    margin-bottom: 0px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333; /* フォントの色 */
+    font-size: 150px; /* フォントサイズ */
+    padding: 8px 30px; /* ボタンのパディングを大きくする */
+    font-size: 30px; /* ボタンのフォントサイズを大きくする */
+    background-color: #C75961;
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* ボーダーの角を丸くする */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    bottom: 70px;
+    }
+    .group_sushi {
+    transform: scale(0.8); /* 50%縮小 */
+    }
+
+    .image {
+        margin-top: 30px;
+    }
+    button:hover {
+    background-color: #c7596093;
+    }

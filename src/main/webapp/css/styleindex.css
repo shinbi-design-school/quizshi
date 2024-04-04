@@ -97,6 +97,23 @@ div#answers-container {
 }
 
 /* お寿司側右画面 */
+#dishes {
+    position: absolute;
+    width: 39%;
+    height: 37%;
+    top: 294px;
+    left: 728px;
+    z-index: 999;
+    transform: skewX(30deg);
+}
+
+#dishes img {
+    width: 14%;
+    margin: -7px -6px;
+    padding: 0;
+    transform: skewX(-30deg);
+}
+
 .talk {
     display: flex;
     margin-left: -116px;
@@ -111,6 +128,8 @@ img.sushigeta{
     width: 750px;
     margin: -40px auto;
     display: block;
+    z-index: 3;
+    /* transform: scale(-1, 1); */
 }
 
 img.sushineta1{
@@ -118,12 +137,13 @@ img.sushineta1{
     position: absolute;
     right: 130px;
     top: 50px;
+    
 }
 
 img.sake {
     position: absolute;
     width: 11%;
-    bottom: 135px;
+    bottom: 103px;
     left: 400px;
 }
 
@@ -191,4 +211,9 @@ button#okanjou {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
+    z-index: 4;
+    cursor: pointer;
+}
+button#okanjou:hover {
+    background-color: #ec5e68;
 }

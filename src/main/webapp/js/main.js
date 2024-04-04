@@ -4,9 +4,9 @@
     // 問題を配列で登録
     const quizzes = [
         {
-            question: "いくらはどれ",
-            answer: ["まぐろ", "さば", "いくら"],
-            correctAnswer: "ikura",
+            question: "ヒトデに襲われると閉殻筋（貝柱）を使い、殻を力強く開閉することで、貝の中に入っている海水を吐き出し",
+            answer: ["まぐろ", "さば", "フィラデルフィアロール"],
+            correctAnswer: "まぐろ",
             comment :"いくらは鮭のたまご",
             image:"../images/sushi_ikura.png"
         },
@@ -25,19 +25,112 @@
             image:"../images/sushi_battera.png"
         },
         {
-            question: "たいはどれ",
-            answer: ["tai", "ringo", "kai"],
-            correctAnswer: "tai",
+            question: "江戸っ子からは、「せっかくの海苔の香りが台なしで、こんなものは下種の食べ物だ」などと酷評されていた巻きずしは？",
+            answer: ["たくあんまき", "なっとうまき", "かっぱまき"],
+            correctAnswer: "たくあんまき",
             comment: "たいはめでたい",
             image:"../images/sushi_kinmedai.png"
         },
         {
-            question: "たいはどれ",
-            answer: ["フィラデルフィアロール", "たくあん巻き", "かんぴょう巻き"],
-            correctAnswer: "フィラデルフィアロール",
-            comment: "たいはめでたい",
-            image:"../images/sushi_kinmedai.png"
-        }
+            question: "さばはどれ",
+            answer: ["kinoko", "saba", "kai"],
+            correctAnswer: "saba",
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
+        },
+        {
+            question: "さばはどれ",
+            answer: ["kinoko", "saba", "kai"],
+            correctAnswer: "saba",
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
+        },
+        {
+            question: "さばはどれ",
+            answer: ["kinoko", "saba", "kai"],
+            correctAnswer: "saba",
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
+        },
+        {
+            question: "さばはどれ",
+            answer: ["kinoko", "saba", "kai"],
+            correctAnswer: "saba",
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
+        },
+        {
+            question: "さばはどれ",
+            answer: ["kinoko", "saba", "kai"],
+            correctAnswer: "saba",
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
+        },
+        {
+            question: "さばはどれ",
+            answer: ["kinoko", "saba", "kai"],
+            correctAnswer: "saba",
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
+        },
+        {
+            question: "さばはどれ",
+            answer: ["kinoko", "saba", "kai"],
+            correctAnswer: "saba",
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
+        },
+        {
+            question: "さばはどれ",
+            answer: ["kinoko", "saba", "kai"],
+            correctAnswer: "saba",
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
+        },
+        {
+            question: "さばはどれ",
+            answer: ["kinoko", "saba", "kai"],
+            correctAnswer: "saba",
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
+        },
+        {
+            question: "さばはどれ",
+            answer: ["kinoko", "saba", "kai"],
+            correctAnswer: "saba",
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
+        },
+        {
+            question: "さばはどれ",
+            answer: ["kinoko", "saba", "kai"],
+            correctAnswer: "saba",
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
+        },
+        {
+            question: "さばはどれ",
+            answer: ["kinoko", "saba", "kai"],
+            correctAnswer: "saba",
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
+        },
+        {
+            question: "さばはどれ",
+            answer: ["kinoko", "saba", "kai"],
+            correctAnswer: "saba",
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
+        },
+        {
+            question: "さばはどれ",
+            answer: ["kinoko", "saba", "kai"],
+            correctAnswer: "saba",
+            comment: "さばは好きじゃない",
+            image:"../images/sushi_battera.png"
+        },
+
+
 
     ];
 
@@ -71,7 +164,7 @@
         shuffledAnswers.forEach(answer => { 
             const button = document.createElement("button");
             button.textContent = answer;
-            button.onclick = () => checkAnswer(answer, quiz.correctAnswer, quiz.comment);
+            button.onclick = () => checkAnswer(answer, quiz.correctAnswer, quiz.comment, quiz.image);
             answersContainer.appendChild(button);
         });
     }
@@ -87,10 +180,10 @@
 	        taishou.textContent = "へい、おまち！";
 			alert("正解!");
 	        alertComment(correctAnswer, comment);
-	        //お皿画面の画像を変更する
-	        dishes.innerHTML = `<img src="${image}" alt="Dish Image">`;
-	        
-	        
+	        //お皿画面の画像を表示させる
+                const imagElement = document.createElement('img');
+                imagElement.src = image;
+                dishes.appendChild(imagElement);
         } else {
 	        taishou.textContent = "ネタ切れです";
             alert("不正解!");

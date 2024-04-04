@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>くいずし</title>
+    <!-- 追加されたフォントのリンクを追加 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/total.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <!-- 追加したフォントを適用した見出し -->
+        <h1 class="message">合計<span  id="dishes_sum"></span>皿</h1>
+           <h2 class="message_bye">食べました！<br>
+                またのお越しをお待ちしております</h2>
+        <div class="image"><img src="../images/group_sushi.png" width="400px" height="360px"></div>
+        <div class="button"><button onclick="backToTop()" id="end">タイトルに戻る</button></div>
+    </div>
+    
+    <script>
+        // ページが読み込まれたときに実行される処理
+        window.onload = function() {
+            displayCount(count); // countの値を表示
+        };
+    </script>
+    <script src="../js/main.js"></script>
+    <!-- <script src="../js/total.js"></script> -->
+
+
+</body>
+</html>
