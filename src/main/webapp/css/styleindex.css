@@ -101,15 +101,15 @@ div#answers-container {
     position: absolute;
     width: 39%;
     height: 37%;
-    top: 294px;
-    left: 728px;
+    top: 260px;
+    left: 697px;
     z-index: 999;
     transform: skewX(30deg);
 }
 
 #dishes img {
     width: 14%;
-    margin: -7px -6px;
+    margin: -7px -5px;
     padding: 0;
     transform: skewX(-30deg);
 }
