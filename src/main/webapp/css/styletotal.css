@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
+
 body {
     overflow: hidden;
     background-color: #f0f0f0;
-    background-image: url("../images/sushiback.jpg"); /* 画像 */
+    background-image: url("../images/sushiyatop.jpg"); /* 画像 */
     background-size: cover;               /* 全画面 */
     margin-top: 0px;
     padding: 0;
@@ -12,9 +13,11 @@ body {
     height: 100vh;
     }
 
+
     .container {
     text-align: center;
     }
+
 
     .message {
     margin: 0;
@@ -27,6 +30,7 @@ body {
     top: 40px;
     }
 
+
     .message_bye {
     margin: 0px;
     font-family: "Dela Gothic One", sans-serif;
@@ -36,8 +40,9 @@ body {
     font-size: 50px; /* フォントサイズ */
     position: relative;
     top: 45px;
-    
+   
     }
+
 
     button {
     margin-bottom: 0px;
@@ -61,9 +66,15 @@ body {
     transform: scale(0.8); /* 50%縮小 */
     }
 
+
     .image {
         margin-top: 30px;
     }
     button:hover {
     background-color: #c7596093;
     }
+
+
+    #dishes_sum {
+        color: red;
+}
