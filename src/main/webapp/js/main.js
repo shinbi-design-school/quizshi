@@ -19,8 +19,8 @@
         },
         {
             question: "数をごまかす際に用いられることわざ、「●●を読む」",
-            answer: ["タイ", "サバ", "カイ"],
-            correctAnswer: "サバ",
+            answer: ["タ イ", "サ バ", "カ イ"],
+            correctAnswer: " サバ",
             comment: "サバは鮮度の落ちが激しい魚。",
             image:"../images/sushi_battera.png"
         },
@@ -84,7 +84,7 @@
             question: "寿命が５年ほどの魚は？",
             answer: ["アジ", "サンマ", "イワシ"],
             correctAnswer: "アジ",
-            comment: "１年で体長15cm、3年で約30cmに成長し、寿命は５年以上とされる",
+            comment: "1年で体長15cm、3年で約30cmに成長し、寿命は5年以上とされる",
             image:"../images/sushi_iwashi.png"
         },
         {
@@ -113,7 +113,7 @@
             answer: ["ハマチ", "イワシ", "サワラ"],
             correctAnswer: "ハマチ",
             comment: "ハマチ」は、60～80cmほどの体長になり、地域によっては30～40cmのものを指します。 別名「ワラサ」とも呼ばれます",
-            image:"../images/sushi_hamaｃｈi.png"
+            image:"../images/sushi_hamachi.png"
         },
         {
             question: "カツオのお腹の縞模様はいつ現れる？",
@@ -145,8 +145,8 @@
         },
         {
             question: "ウナギの旬はどれ？",
-            answer: ["冬", "夏", "春"],
-            correctAnswer: "冬",
+            answer: ["冬ごろ", "夏ごろ", "春ごろ"],
+            correctAnswer: "冬ごろ",
             comment: " 「夏の土用の丑の日」という言葉があるが、実は旬は『冬』である",
             image:"../images/sushi_unagi_nori.png"
         },
@@ -180,8 +180,8 @@
         },
         {
             question: "イカの足は10本ですが、そのうち触腕は何本？",
-            answer: ["2本", "4本", "3本"],
-            correctAnswer: "2本",
+            answer: ["2 本", "4 本", "3 本"],
+            correctAnswer: "2 本",
             comment: " 本当はタコと同じで８本なのです。 １０本のうちの２本は触腕と呼ばれるもので、他の腕より長く、先が木の葉の形をしています。 ",
             image:"../images/sushi_ika.png"
         },
@@ -278,7 +278,7 @@
         },
         {
             question: "ねぎとろの語源は？",
-            answer: ["ネギとトロだから", "中落ちを削り取るから", "加護を願う「ねぐ」から"],
+            answer: ["ネギとトロだから", "中落ちを削り取るから", "加護を願う「 ねぐ 」から"],
             correctAnswer: "中落ちを削り取るから",
             comment: "日本で生まれたマグロを生で食する調理法。「中落ち」や腹などの「すき身」をたたき、ネギと合わせたもの",
             image:"../images/sushi_negitoro.png"
@@ -333,9 +333,11 @@
 			alert("正解!");
 	        alertComment(correctAnswer, comment);
 	        //お皿画面の画像を表示させる
+
                 const imagElement = document.createElement('img');
                 imagElement.src = image;
                 dishes.appendChild(imagElement);
+            
         } else {
 	        taishou.textContent = "ネタ切れです";
             alert("不正解!");

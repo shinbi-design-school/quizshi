@@ -99,21 +99,20 @@ div#answers-container {
 /* お寿司側右画面 */
 #dishes {
     position: absolute;
-    width: 39%;
+    width: 41%;
     height: 37%;
-    top: 260px;
-    left: 697px;
+    top: 265px;
+    left: 689px;
     z-index: 999;
-    transform: skewX(30deg);
+    transform: skewX(34deg);
 }
 
 #dishes img {
-    width: 14%;
-    margin: -7px -5px;
+    width: 12%;
+    margin: -7px -6px;
     padding: 0;
-    transform: skewX(-30deg);
+    transform: skewX(-34deg);
 }
-
 .talk {
     display: flex;
     margin-left: -116px;
